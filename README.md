@@ -9,7 +9,7 @@
 * 提供了根据浏览器请求，反向访问服务器资源
   * 可以根据请求的顺序，决定访问的服务器的顺序(负载均衡)
 
-![image-20210724160825276](https://gitee.com/lmx1989/sz2103/raw/images/image-20210724160825276.png)
+![image-20210724160825276](https://github.com/Echooee/s6_high/tree/images/image-20210724160825276.png)
 
 ## Nginx安装
 
