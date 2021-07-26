@@ -9,7 +9,7 @@
 * 提供了根据浏览器请求，反向访问服务器资源
   * 可以根据请求的顺序，决定访问的服务器的顺序(负载均衡)
 
-![image-20210724160825276](https://gitee.com/lmx1989/sz2103/raw/images/image-20210724160825276.png)
+![image-20210724160825276](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210724160825276.png)
 
 ## Nginx安装
 
@@ -54,7 +54,7 @@ tar -zxvf nginx-1.14.2.tar.gz -C /usr/local
    * 在虚拟机中输入
      * curl localhost:80
 
-   ![image-20210724163433872](https://gitee.com/lmx1989/sz2103/raw/images/image-20210724163433872.png)
+   ![image-20210724163433872](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210724163433872.png)
 
    * 通过window的浏览器访问是访问不了
      * 因为防火墙问题，没有关闭，导致无法被访问，无法访问80端口
@@ -103,7 +103,7 @@ tar -zxvf nginx-1.14.2.tar.gz -C /usr/local
 
 * 得到Nginx的响应结果
 
-  ![image-20210724171239086](https://gitee.com/lmx1989/sz2103/raw/images/image-20210724171239086.png)
+  ![image-20210724171239086](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210724171239086.png)
 
 * 分析原因如何得到：
   * 在开启nginx时，会默认加载配置文件/conf/nginx.conf
@@ -112,7 +112,7 @@ tar -zxvf nginx-1.14.2.tar.gz -C /usr/local
   * 只要匹配了当前的请求，就会访问html目录中的index.html
     * 这就是我们的欢迎页面
 
-![image-20210724172134550](https://gitee.com/lmx1989/sz2103/raw/images/image-20210724172134550.png)
+![image-20210724172134550](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210724172134550.png)
 
 ## Nginx的启动和关闭
 
@@ -139,7 +139,7 @@ tar -zxvf nginx-1.14.2.tar.gz -C /usr/local
     * `:set number`
     * 上方语法有问题，下方没问题
 
-    ![image-20210724173121536](https://gitee.com/lmx1989/sz2103/raw/images/image-20210724173121536.png)
+    ![image-20210724173121536](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210724173121536.png)
 
 * 关闭
 
@@ -371,7 +371,7 @@ location /ace-master {
       * 有7种或以上的负载均衡，并且支持算法
 * 实现负载均衡案例
 
-![image-20210726154938751](https://gitee.com/lmx1989/sz2103/raw/images/image-20210726154938751.png)
+![image-20210726154938751](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210726154938751.png)
 
 * 实现步骤
 
@@ -382,12 +382,12 @@ location /ace-master {
   * 确定tomcat能够被访问
     * 环境没有问题
   * 配置Nginx配置文件
-  * ![image-20210726155537815](https://gitee.com/lmx1989/sz2103/raw/images/image-20210726155537815.png)
+  * ![image-20210726155537815](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210726155537815.png)
     * 根据proxy_pass的配置的节点名称找到相对应的upstream的节点名称
     * 从而匹配到要负载均衡的服务器资源
     * 无需开放9001和9002和9003端口，由80端口进行映射
 
-  ![image-20210726160313363](https://gitee.com/lmx1989/sz2103/raw/images/image-20210726160313363.png)
+  ![image-20210726160313363](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210726160313363.png)
 
 * 负载均衡的配置
 
@@ -491,7 +491,7 @@ location /ace-master {
 
 ## 静态代理
 
-![image-20210726170538935](https://gitee.com/lmx1989/sz2103/raw/images/image-20210726170538935.png)
+![image-20210726170538935](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210726170538935.png)
 
 * 实现
 
@@ -530,7 +530,7 @@ location /ace-master {
   * 图片的状态码为403
     * 没有权限
 
-  ![image-20210726170617440](https://gitee.com/lmx1989/sz2103/raw/images/image-20210726170617440.png)
+  ![image-20210726170617440](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210726170617440.png)
 
 * 修改图片的权限
 
@@ -538,7 +538,7 @@ location /ace-master {
     * chmod -R 755 /opt/static/myweb
       * 递归授权
 
-  ![image-20210726170819101](https://gitee.com/lmx1989/sz2103/raw/images/image-20210726170819101.png)
+  ![image-20210726170819101](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210726170819101.png)
 
 ## 动静分离
 
@@ -602,7 +602,7 @@ server {
 
     * `C:\Windows\System32\drivers\etc\hosts`
 
-    ![image-20210726173313143](https://gitee.com/lmx1989/sz2103/raw/images/image-20210726173313143.png)
+    ![image-20210726173313143](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210726173313143.png)
 
     * 配置完成立即生效
 
