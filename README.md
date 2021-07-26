@@ -54,7 +54,7 @@ tar -zxvf nginx-1.14.2.tar.gz -C /usr/local
    * 在虚拟机中输入
      * curl localhost:80
 
-   ![image-20210724163433872](https://gitee.com/lmx1989/sz2103/raw/images/image-20210724163433872.png)
+   ![image-20210724163433872](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210724163433872.png)
 
    * 通过window的浏览器访问是访问不了
      * 因为防火墙问题，没有关闭，导致无法被访问，无法访问80端口
@@ -103,7 +103,7 @@ tar -zxvf nginx-1.14.2.tar.gz -C /usr/local
 
 * 得到Nginx的响应结果
 
-  ![image-20210724171239086](https://gitee.com/lmx1989/sz2103/raw/images/image-20210724171239086.png)
+  ![image-20210724171239086](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210724171239086.png)
 
 * 分析原因如何得到：
   * 在开启nginx时，会默认加载配置文件/conf/nginx.conf
@@ -112,7 +112,7 @@ tar -zxvf nginx-1.14.2.tar.gz -C /usr/local
   * 只要匹配了当前的请求，就会访问html目录中的index.html
     * 这就是我们的欢迎页面
 
-![image-20210724172134550](https://gitee.com/lmx1989/sz2103/raw/images/image-20210724172134550.png)
+![image-20210724172134550](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210724172134550.png)
 
 ## Nginx的启动和关闭
 
@@ -139,7 +139,7 @@ tar -zxvf nginx-1.14.2.tar.gz -C /usr/local
     * `:set number`
     * 上方语法有问题，下方没问题
 
-    ![image-20210724173121536](https://gitee.com/lmx1989/sz2103/raw/images/image-20210724173121536.png)
+    ![image-20210724173121536](https://raw.githubusercontent.com/Echooee/s6_high/images/image-20210724173121536.png)
 
 * 关闭
 
