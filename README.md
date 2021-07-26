@@ -310,6 +310,7 @@ http {
 
 
 
+
 # Nginx day02
 
 ## 静态资源部署
@@ -665,4 +666,3 @@ server {
       * beijing.myweb.com
       * nanjing.myweb.com
       * tianjin.myweb.com
-
