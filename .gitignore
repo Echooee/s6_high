@@ -1,1 +1,4 @@
 README.assets/
+.idea/
+target/
+*.xml
