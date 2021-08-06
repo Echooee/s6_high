@@ -29,6 +29,7 @@ public class GetConsumerMessage {
         System.out.println(message);
     }
 
+    //fanout方式
     @RabbitListener(
             bindings = {
 //                    绑定随机名称的消息队列和交换机
@@ -47,7 +48,7 @@ public class GetConsumerMessage {
         System.out.println(message);
     }
 
-
+    //topic方式
 //    @RabbitListener(queues = "topicQueue1")
     @RabbitListener(queues = "topicQueue2")
 //    @RabbitListener(queues = "topicQueue3")
