@@ -2,3 +2,6 @@ README.assets/
 .idea/
 target/
 *.xml
+mvnw
+*.cmd
+.mvn/
