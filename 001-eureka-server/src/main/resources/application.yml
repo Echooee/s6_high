@@ -1,0 +1,25 @@
+
+# 项目名称，注册中心中注册的服务名称
+#spring:
+#  application:
+#    name: 工程名称
+
+# 端口号
+server:
+  port: 6001
+
+# Eureka 配置信息
+eureka:
+  client:
+    service-url:
+      # 注册中心 url
+     defaultZone: http://localhost:6001/eureka
+    # 无需注册到注册中心中
+    register-with-eureka: false
+    # 无需拉取注册中心中的服务列表
+    fetch-registry: false
+
+# 如何测试注册中心部署成功呢？
+# 在浏览器上访问eureka后台管理页面即可
+# http://localhost:6001/
+
