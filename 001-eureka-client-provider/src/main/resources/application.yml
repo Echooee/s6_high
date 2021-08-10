@@ -1,0 +1,23 @@
+#端口号
+server:
+  port: 7001
+
+#配置工程名称
+spring:
+  application:
+    name: eureka-client-provider
+
+#注册到注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka6001:6001/eureka, http://eureka6002:6002/eureka
+    fetch-registry: true
+    register-with-eureka: true
+
+  instance:
+    # 向服务器端发送心跳机制的时间，以秒为单位
+    lease-renewal-interval-in-seconds: 5
+    # 服务器端如果没有收到心跳机制，10秒钟后剔除服务列表，以秒为单位
+    lease-expiration-duration-in-seconds: 5
+
